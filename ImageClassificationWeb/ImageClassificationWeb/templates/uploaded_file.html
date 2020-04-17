@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prediction</title>
+</head>
+<body>
+	<h1>Prediction for {{filename}}: </h1>
+	<h2>{{label}}</h2>
+	<img src="data:image/png;base64,{{contents}}">
+	<h3><button type="button" onclick="window.location.href='{{ url_for('upload_image') }}';">Classify Another Image</button></h3>
+</body>
+</html>
